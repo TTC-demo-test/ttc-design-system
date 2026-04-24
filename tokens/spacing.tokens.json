@@ -1,0 +1,14 @@
+{
+  "space": {
+    "xs": { "value": "0.25rem" },
+    "sm": { "value": "0.5rem" },
+    "md": { "value": "1rem" },
+    "lg": { "value": "1.5rem" },
+    "xl": { "value": "2rem" }
+  },
+  "radius": {
+    "sm": { "value": "0.25rem" },
+    "md": { "value": "0.5rem" },
+    "lg": { "value": "0.75rem" }
+  }
+}

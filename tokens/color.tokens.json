@@ -1,0 +1,28 @@
+{
+  "color": {
+    "brand": {
+      "primary": { "value": "#0055a5" },
+      "secondary": { "value": "#f2a900" }
+    },
+    "surface": {
+      "default": { "value": "#ffffff" },
+      "muted": { "value": "#f8fafc" }
+    },
+    "text": {
+      "default": { "value": "#1f2937" },
+      "muted": { "value": "#6b7280" },
+      "inverse": { "value": "#ffffff" }
+    },
+    "border": {
+      "default": { "value": "#d1d5db" }
+    },
+    "status": {
+      "success": { "value": "#166534" },
+      "successBg": { "value": "#dcfce7" },
+      "warning": { "value": "#92400e" },
+      "warningBg": { "value": "#fef3c7" },
+      "danger": { "value": "#991b1b" },
+      "dangerBg": { "value": "#fee2e2" }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-brand-primary: #0055a5;
+  --color-brand-secondary: #f2a900;
+  --color-surface-default: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-text-default: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-inverse: #ffffff;
+  --color-border-default: #d1d5db;
+  --color-status-success: #166534;
+  --color-status-success-bg: #dcfce7;
+  --color-status-warning: #92400e;
+  --color-status-warning-bg: #fef3c7;
+  --color-status-danger: #991b1b;
+  --color-status-danger-bg: #fee2e2;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --font-family-sans: Inter, Arial, sans-serif;
+  --font-family-serif: Georgia, serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}

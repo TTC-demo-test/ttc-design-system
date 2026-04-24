@@ -1,0 +1,20 @@
+{
+  "font": {
+    "family": {
+      "sans": { "value": "Inter, Arial, sans-serif" },
+      "serif": { "value": "Georgia, serif" }
+    },
+    "size": {
+      "sm": { "value": "0.875rem" },
+      "base": { "value": "1rem" },
+      "lg": { "value": "1.125rem" },
+      "xl": { "value": "1.5rem" },
+      "2xl": { "value": "2rem" }
+    },
+    "weight": {
+      "regular": { "value": "400" },
+      "medium": { "value": "500" },
+      "bold": { "value": "700" }
+    }
+  }
+}
