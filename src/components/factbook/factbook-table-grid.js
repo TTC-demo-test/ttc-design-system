@@ -178,119 +178,6 @@
       table.appendChild(tbody);
     }
 
-    // function enableGridKeyboard(table) {
-    //     const wrapper = table.closest("[data-csv-grid]") || table.closest(".csv-grid-wrap");
-
-    //     if (!wrapper) {
-    //         console.warn("CSV grid wrapper not found for table:", table);
-    //         return;
-    //     }
-
-    //     wrapper.dataset.csvGridKeyboardBound = "true";
-    //     console.log("Binding keyboard behavior for:", table);
-
-    //   let matrix = buildMatrix(table);
-    //   if (!matrix.length || !matrix[0].length) {
-    //     return;
-    //   }
-
-    //   let active = getInitialActivePosition(matrix);
-    //   setActiveCell(matrix, active, false);
-
-    //   wrapper.addEventListener("click", function (event) {
-    //     const cell = event.target.closest(".csv-grid-cell");
-    //     if (!cell || !table.contains(cell)) {
-    //       return;
-    //     }
-    //     matrix = buildMatrix(table);
-    //     active = getPositionFromCell(cell);
-    //     setActiveCell(matrix, active, true);
-    //   });
-
-    //   wrapper.addEventListener("keydown", function (event) {
-    //     matrix = buildMatrix(table);
-    //     console.log("table keydown:", event.key, event.target);
-    //     const currentCell = event.target.closest(".csv-grid-cell");
-    //     const wrapperHasFocus = document.activeElement === wrapper;
-
-    //     const shouldEnterGrid = wrapperHasFocus && (
-    //         event.key === "Enter" ||
-    //         event.key === " " ||
-    //         event.key === "ArrowDown" ||
-    //         event.key === "ArrowRight"
-    //     )
-        
-    //     if (shouldEnterGrid) {
-    //         event.preventDefault()
-    //         setActiveCell(matrix, active, true);
-    //         return;
-    //     }
-
-    //     if (!currentCell || !table.contains(currentCell)) {
-    //         return;
-    //     }
-
-    //     const current = getPositionFromCell(currentCell);
-    //     let next = { ...current };
-    //     let handled = true;
-
-    //     switch (event.key) {
-    //       case "ArrowRight":
-    //         next.col += 1;
-    //         break;
-    //       case "ArrowLeft":
-    //         next.col -= 1;
-    //         break;
-    //       case "ArrowDown":
-    //         next.row += 1;
-    //         break;
-    //       case "ArrowUp":
-    //         next.row -= 1;
-    //         break;
-    //       case "Home":
-    //         next.col = 0;
-    //         break;
-    //       case "End":
-    //         next.col = matrix[current.row].length - 1;
-    //         break;
-    //       default:
-    //         handled = false;
-    //         break;
-    //     }
-
-    //     if (!handled) {
-    //       return;
-    //     }
-
-    //     event.preventDefault();
-
-    //     next.row = clamp(next.row, 0, matrix.length - 1);
-    //     next.col = clamp(next.col, 0, matrix[next.row].length - 1);
-
-    //     active = next;
-    //     setActiveCell(matrix, active, true);
-    //   });
-
-    //   if (wrapper) {
-    //     wrapper.addEventListener("keydown", function (event) {
-    //         console.log("wrapper keydown:", event.key, document.activeElement);
-    //       const shouldEnterGrid =
-    //         document.activeElement === wrapper &&
-    //         (event.key === "Enter" ||
-    //          event.key === " " ||
-    //          event.key === "ArrowDown" ||
-    //          event.key === "ArrowRight");
-
-    //       if (!shouldEnterGrid) {
-    //         return;
-    //       }
-
-    //       event.preventDefault();
-    //       setActiveCell(matrix, active, true);
-    //     });
-    //   }
-    // }
-
     function enableGridKeyboard(table) {
   const wrapper =
     table.closest("[data-csv-grid]") ||
@@ -334,14 +221,6 @@
 
     const currentCell = event.target.closest(".csv-grid-cell");
     const wrapperHasFocus = document.activeElement === wrapper;
-
-    console.log("CSV grid keydown:", {
-      key: event.key,
-      target: event.target,
-      activeElement: document.activeElement,
-      wrapperHasFocus,
-      currentCell
-    });
 
     const entryKeys = [
       "Enter",
@@ -437,26 +316,6 @@
         return Array.from(tr.querySelectorAll(".csv-grid-cell"));
       });
     }
-
-    // function setActiveCell(matrix, position, focus) {
-    //   matrix.flat().forEach(function (cell) {
-    //     cell.tabIndex = -1;
-    //   });
-
-    //   const target = matrix[position.row] && matrix[position.row][position.col];
-    //   if (!target) {
-    //     return;
-    //   }
-
-    //   target.tabIndex = 0;
-
-    //   if (focus) {
-    //     target.focus();
-    //     if (typeof target.scrollIntoView === "function") {
-    //       target.scrollIntoView({ block: "nearest", inline: "nearest" });
-    //     }
-    //   }
-    // }
     function setActiveCell(matrix, position, focus) {
         const cells = matrix.flat().filter(Boolean);
 
@@ -490,14 +349,6 @@
 
         if (focus) {
             target.focus({ preventScroll: true });
-
-            console.log("CSV grid focus result:", {
-            target,
-            activeElement: document.activeElement,
-            focused: document.activeElement === target,
-            row: safeRow,
-            col: safeCol
-            });
 
             if (typeof target.scrollIntoView === "function") {
             target.scrollIntoView({
