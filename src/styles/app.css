@@ -4,3 +4,13 @@
   --color-brand-primary: #001e60;
   --color-brand-secondary: #ffb500;
 }
+
+.csv-grid-cell:focus {
+  outline: 3px solid currentColor;
+  outline-offset: -3px;
+}
+
+.csv-grid-cell[data-active-cell="true"] {
+  outline: 3px solid currentColor;
+  outline-offset: -3px;
+}
