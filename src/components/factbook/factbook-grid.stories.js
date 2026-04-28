@@ -92,32 +92,6 @@ export const Default = {
         `
     },
     play: async ({ canvasElement }) => {
-        console.log("Storybook play running");
         await initCsvGridTables(canvasElement)
     }
 }
-
-// export const FactbookGrid = () => `
-//     <div class="csv-grid-region">
-//         <p id="csv-grid-help-[[3ab5dc2821f07795b3b266d4314922a1]]" class="csv-grid-help">
-//             Use arrow keys to move between header and data cells. Press Tab to leave the table.
-//         </p>
-
-//         <div
-//             class="csv-grid-wrap"
-//             tabindex="0"
-//             role="region"
-//             aria-labelledby="csv-grid-[[3ab5dc2821f07795b3b266d4314922a1]] csv-grid-help-[[3ab5dc2821f07795b3b266d4314922a1]]"
-//             data-csv-grid=""
-//         >
-//             <table
-//             id="csv-grid-[[3ab5dc2821f07795b3b266d4314922a1]]"
-//             class="table table-striped"
-//             data-csv-url="[[658d2228bb7878e5019de76e33df009f]]"
-//             data-first-column-header="[[4c4cd0810e5ef6234f37c76971a14c55]]"
-//             data-caption="[[e8b280f9a7a05721ba6f073b9b6e4f86]]"
-//             ></table>
-//         </div>
-//         <small class="mc-table__notes">[[b5846e90625bfabe5e1ce5082919e824]]</small>
-//     </div>
-//`
