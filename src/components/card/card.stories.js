@@ -148,6 +148,12 @@ export const HighlightCard = () => `
   </div>
 `
 
+HighlightCard.parameters = {
+  a11y: {
+    test: 'error'
+  }
+}
+
 export const DefaultCard = () => `
   <a href="#" class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-md shadow-xs hover:bg-neutral-secondary-medium">
       <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">Noteworthy technology acquisitions 2021</h5>
