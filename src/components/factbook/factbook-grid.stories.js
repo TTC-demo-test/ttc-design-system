@@ -55,7 +55,7 @@ export default {
 export const Default = {
     args: {
         id: "certificate-completions",
-        firstColumnHeader: "s",
+        firstColumnHeader: "",
         caption: "Certificcate completion rates by year",
         notes: "NG indicates no graduates. Dashes indicate no available data.",
         csvText: sampleCsv
