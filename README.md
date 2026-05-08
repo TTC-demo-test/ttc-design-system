@@ -59,7 +59,7 @@ npm -v
 2. Download the LTS version for Windows.
 3. Open the downloaded installer.
 4. Follow the installation steps. During installation, you can keep the deault options selected.
-5. After installation finishes, open ~Command Prompt~ (CMD), Powershell, or Windows Terminal.
+5. After installation finishes, open Command Prompt (CMD), Powershell, or Windows Terminal.
 6. Confirm Node.js and npm were installed:
 ```bash
 node -v
@@ -120,7 +120,7 @@ On both Mac and Windows, this keyboard shortcut will stop the local Storybook se
 ### Common Issues
 
 #### "node is not recognized" or "npm is not recognized"
-This usually mewans Node.js was not installd correctly, or the terminal was already open before node was installed.
+This usually means Node.js was not installed correctly, or the terminal was already open before node was installed.
 
 If this is the case, try:
 1. Close the terminal
